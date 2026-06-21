@@ -1,0 +1,35 @@
+name: RoleSystem
+version: '1.0.0'
+main: com.servidor.rolesystem.RoleSystemPlugin
+api-version: '1.21'
+description: Sistema de roles Pacifista/Raider con bypass de GriefPrevention y coliseo
+authors:
+  - Servidor
+
+softdepend:
+  - GriefPrevention
+  - WorldGuard
+
+commands:
+  rol:
+    description: Gestiona tu rol de jugador (Raider/Pacifista)
+    usage: /rol [raider|pacifista|ver <jugador>|setrol <jugador> <rol>]
+    aliases:
+      - role
+
+permissions:
+  rolesystem.rol:
+    description: Permite elegir tu rol
+    default: true
+  rolesystem.ver:
+    description: Ver el rol de cualquier jugador
+    default: true
+  rolesystem.admin:
+    description: Comandos de administrador del sistema de roles
+    default: op
+  rolesystem.bypass.cooldown:
+    description: Ignora el cooldown de cambio de rol
+    default: op
+  rolesystem.bypass.pvp:
+    description: Ignora todas las restricciones de PvP (para staff)
+    default: op

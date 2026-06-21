@@ -1,0 +1,29 @@
+# =============================================
+# RoleSystem - Configuración
+# =============================================
+
+# Horas de espera entre cambios de rol (0 = sin cooldown)
+cooldown-horas: 24
+
+# Nombre EXACTO de la región WorldGuard del coliseo
+# Créala con: /rg define coliseo (estando dentro del área)
+coliseo-region: coliseo
+
+mensajes:
+  rol-elegido: "&8[&6⚔ Roles&8] &fAhora eres &r{rol}&f. ¡Buena suerte!"
+  rol-ya-elegido: "&8[&6⚔ Roles&8] &cYa tienes el rol &r{rol}&c."
+  rol-cambiado-admin: "&8[&6⚔ Roles&8] &fEl rol de &e{jugador}&f fue cambiado a &r{rol}&f."
+  rol-ver: "&8[&6⚔ Roles&8] &fEl rol de &e{jugador}&f es: &r{rol}&f."
+  sin-rol-ver: "&8[&6⚔ Roles&8] &e{jugador}&f todavía no tiene un rol asignado."
+  cooldown: "&8[&6⚔ Roles&8] &cDebes esperar &e{horas}h &cmás antes de cambiar de rol."
+  no-permiso: "&cNo tienes permiso para hacer esto."
+  jugador-no-encontrado: "&cJugador no encontrado."
+  uso-comando: "&8[&6⚔ Roles&8] &fUso: &e/rol &7[raider|pacifista|ver <jugador>]"
+  uso-admin: "&8[&6⚔ Roles&8] &fAdmin: &e/rol setrol <jugador> <raider|pacifista>"
+  sin-rol-propio: "&8[&6⚔ Roles&8] &fAún no tienes un rol. Usa &e/rol raider &fo &e/rol pacifista&f."
+  pvp-raider-a-pacifista: "&8[&4✖&8] &cNo puedes atacar a un &aPacifista&c."
+  pvp-pacifista-cualquiera: "&8[&4✖&8] &cEres un &aPacifista&c. Cambia a &cRaider &ccon &e/rol raider&c para combatir."
+  pvp-sin-rol-atacante: "&8[&4✖&8] &cElige tu rol primero con &e/rol&c antes de combatir."
+  pvp-sin-rol-defensor: "&8[&4✖&8] &c{jugador}&c aún no tiene un rol asignado. No puedes atacarlo."
+  raid-no-raider: "&8[&4✖&8] &cSolo los &cRaiders &cpueden raidear bases."
+  raid-base-pacifista: "&8[&4✖&8] &cNo puedes raidear la base de un &aPacifista&c."
